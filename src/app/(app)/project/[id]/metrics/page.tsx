@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis, Tooltip } from "recharts";
-import { DollarSign, Users, TrendingUp, Target } from "lucide-react";
+// import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis, Tooltip } from "recharts";
+// import { DollarSign, Users, TrendingUp, Target } from "lucide-react";
 
 const data = [
   { name: "Jan", revenue: 4000 },
@@ -21,7 +21,7 @@ export default function MetricsPage() {
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Customer Acquisition Cost (CAC)</CardTitle>
-            <DollarSign className="h-4 w-4 text-muted-foreground" />
+            {/* <DollarSign className="h-4 w-4 text-muted-foreground" /> */}
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">$125.50</div>
@@ -31,7 +31,7 @@ export default function MetricsPage() {
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Customer Lifetime Value (LTV)</CardTitle>
-            <Users className="h-4 w-4 text-muted-foreground" />
+            {/* <Users className="h-4 w-4 text-muted-foreground" /> */}
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">$1,250</div>
@@ -41,7 +41,7 @@ export default function MetricsPage() {
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Monthly Growth Rate</CardTitle>
-            <TrendingUp className="h-4 w-4 text-muted-foreground" />
+            {/* <TrendingUp className="h-4 w-4 text-muted-foreground" /> */}
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">5.6%</div>
@@ -51,7 +51,7 @@ export default function MetricsPage() {
          <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">LTV:CAC Ratio</CardTitle>
-            <Target className="h-4 w-4 text-muted-foreground" />
+            {/* <Target className="h-4 w-4 text-muted-foreground" /> */}
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">10:1</div>
@@ -66,7 +66,7 @@ export default function MetricsPage() {
           <CardDescription>Monthly revenue for the last 6 months.</CardDescription>
         </CardHeader>
         <CardContent>
-          <ResponsiveContainer width="100%" height={350}>
+          {/* <ResponsiveContainer width="100%" height={350}>
             <BarChart data={data}>
               <XAxis dataKey="name" stroke="#888888" fontSize={12} tickLine={false} axisLine={false} />
               <YAxis stroke="#888888" fontSize={12} tickLine={false} axisLine={false} tickFormatter={(value) => `$${value}`} />
@@ -79,7 +79,7 @@ export default function MetricsPage() {
               />
               <Bar dataKey="revenue" fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
             </BarChart>
-          </ResponsiveContainer>
+          </ResponsiveContainer> */}
         </CardContent>
       </Card>
     </div>
