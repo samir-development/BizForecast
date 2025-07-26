@@ -68,7 +68,7 @@ export default function DashboardPage() {
               </DropdownMenu>
             </CardHeader>
             <CardContent>
-              <Badge variant={project.variant as any}>{project.status}</Badge>
+              <Badge variant={project.variant as "default" | "secondary" | "destructive" | "outline"}>{project.status}</Badge>
             </CardContent>
             <CardFooter>
               <p className="text-xs text-muted-foreground">Last updated {project.lastUpdated}</p>
